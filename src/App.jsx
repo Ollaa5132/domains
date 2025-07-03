@@ -73,8 +73,10 @@ function App() {
   try {
     const data = JSON.parse(text);
     console.log("Parsowany JSON:", data);
+    return data;
   } catch (err) {
     console.error("Niepoprawny JSON:", err);
+    return null;
   }
 })
 
